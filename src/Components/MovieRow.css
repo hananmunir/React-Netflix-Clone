@@ -1,0 +1,37 @@
+.row {
+  color: #fff;
+  margin-left: 10px;
+  
+}
+.row > h2 {
+  margin: 25px 0 0 15px;
+  text-align: left;
+}
+.movies-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.movie-poster-large {
+  max-height: 250px !important;
+  width: 167px !important;
+}
+
+.movies-row::-webkit-scrollbar {
+  display: none;
+}
+.movie-poster {
+  padding: 5px 0;
+  object-fit: contain;
+  width: 250px;
+  max-height: 130px;
+  margin: 5.5px;
+  transition: transform 0.5s;
+}
+
+.movie-poster:hover {
+  transform: scale(1.08);
+}
